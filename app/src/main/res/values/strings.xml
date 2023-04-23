@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="refresh_button">refresh_button</string>
+    <string name="top_headlines">TOP HEADLINES</string>
+    <string name="menu_button">menu button</string>
+    <string name="textview">textview</string>
+    <string name="the_morning_feed">The Morning Feed</string>
+    <string name="crispy_news_at_your_fingertips">Crispy News at your FingerTips</string>
+    <string name="next">Next</string>
+
+</resources>
