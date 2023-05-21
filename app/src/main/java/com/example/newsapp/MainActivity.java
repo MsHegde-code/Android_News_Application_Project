@@ -7,17 +7,17 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
-    private Button NextBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        NextBtn = (Button) findViewById(R.id.btnNext);
+        Button nextBtn = (Button) findViewById(R.id.btnNext);
         final Loading_dialog loading_dialog = new Loading_dialog(MainActivity.this);
-        NextBtn.setOnClickListener(new View.OnClickListener() {
+        nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 loading_dialog.startLoadingDialog();
@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         loading_dialog.dismissDialog();
                     }
-                },6000);
+                },5000);
+
                 openHomeScreen();
             }
         });
