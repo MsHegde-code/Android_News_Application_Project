@@ -57,7 +57,7 @@
         app:srcCompat="@drawable/logo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnNext"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="180dp"
