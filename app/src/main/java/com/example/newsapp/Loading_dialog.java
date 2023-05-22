@@ -29,6 +29,7 @@ public class Loading_dialog {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        dialog.dismiss();
+            dialog.dismiss();
+
     }
 }

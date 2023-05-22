@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
+
                         loading_dialog.dismissDialog();
                     }
                 },5000);
