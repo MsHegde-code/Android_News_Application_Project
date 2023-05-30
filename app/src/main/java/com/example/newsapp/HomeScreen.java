@@ -8,8 +8,6 @@ import android.os.Bundle;
 
 import com.example.newsapp.Models.NewsApiResponse;
 import com.example.newsapp.Models.NewsHeadLines;
-import com.example.newsapp.Models.OnFetchDataListener;
-import com.example.newsapp.Models.RequestManager;
 
 import java.util.List;
 
@@ -30,24 +28,25 @@ public class HomeScreen extends AppCompatActivity {
         manager.getNewsHeadlines(listener, "general", null);
 
     }
-        private final OnFetchDataListener<NewsApiResponse> listener = new OnFetchDataListener<NewsApiResponse>() {
+       private final OnFetchDataListener<NewsApiResponse> listener = new OnFetchDataListener<NewsApiResponse>() {
+           @Override
+           public void onFetchData(List<NewsHeadLines> list, String message) {
+               showNews(list);
+           }
 
-            // check the methods
-            void onFetchData(List<NewsHeadLines> list, String message) {
-                showNews(list);
-            }
+           @Override
+           public void onError(String message) {
 
+           }
+       };
 
-            void onError(String message) {
+        private void showNews (List<NewsHeadLines> list) {
 
-            }
-        };
-
-        private void showNews (List < NewsHeadLines > list) {
             recyclerView = findViewById(R.id.recyclerHome);
             recyclerView.setHasFixedSize(true);
+            recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
             adapter = new CustomAdapter(this, list);
             recyclerView.setAdapter(adapter);
-            recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
+
         }
     }
