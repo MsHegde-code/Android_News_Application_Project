@@ -66,6 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/text_detail_detail"
+                android:layout_margin="8dp"
                 android:textSize="22sp"
                 android:textColor="@color/black"
                 android:layout_marginTop="8dp">
@@ -76,6 +77,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/text_detail_content"
                 android:textSize="20sp"
+                android:layout_margin="8dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="8dp">
 

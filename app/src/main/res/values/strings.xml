@@ -10,5 +10,12 @@
     <string name="loading">Loading…</string>
     <string name="logo">logo</string>
     <string name="api_key">7525bcf71a594270aa02e5deb5da2981</string>
+    <string name="technology">technology</string>
+    <string name="business">business</string>
+    <string name="entertainment">entertainment</string>
+    <string name="general">general</string>
+    <string name="health">health</string>
+    <string name="sports">sports</string>
+    <string name="science">science</string>
 
 </resources>
