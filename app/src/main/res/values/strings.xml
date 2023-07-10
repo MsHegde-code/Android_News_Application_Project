@@ -17,5 +17,6 @@
     <string name="health">health</string>
     <string name="sports">sports</string>
     <string name="science">science</string>
+    <string name="speak">Speak</string>
 
 </resources>

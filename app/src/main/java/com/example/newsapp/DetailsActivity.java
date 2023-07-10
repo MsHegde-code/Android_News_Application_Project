@@ -52,14 +52,14 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         Picasso.get().load(headLines.getUrlToImage()).into(imgNews);
 
 
-        //for text to speech
+        //for text to speech implementation
         speak = findViewById(R.id.tts);
         speak.setOnClickListener(this);
         textToSpeech = new TextToSpeech(getBaseContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int i) {
-                if(i!= TextToSpeech.ERROR)
-                    Toast.makeText(DetailsActivity.this, "Success", Toast.LENGTH_SHORT).show();
+                if(i== TextToSpeech.ERROR)
+                    Toast.makeText(DetailsActivity.this, "tts error", Toast.LENGTH_SHORT).show();
             }
         });
         textToSpeech.setLanguage(Locale.UK);
