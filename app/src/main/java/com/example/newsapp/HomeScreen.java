@@ -114,6 +114,7 @@ public class HomeScreen extends AppCompatActivity implements SelectListener, Vie
                 .putExtra("data", headLines));
     }
 
+    //buttons for category section
     @Override
     public void onClick(View v) {
         Button button = (Button) v;
