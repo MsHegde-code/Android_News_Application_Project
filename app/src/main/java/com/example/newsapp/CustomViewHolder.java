@@ -14,6 +14,10 @@ public class CustomViewHolder extends RecyclerView.ViewHolder {
     ImageView img_headLine;
     CardView cardView;
 
+    /*view holder enables us to draw UI for individual items on the screen
+    all the items of the view holder are mapped to the corresponding resource
+    id as it is impossible to map all the recycler view items to the ViewHolder*/
+
     public CustomViewHolder(@NonNull View itemView) {
         super(itemView);
 

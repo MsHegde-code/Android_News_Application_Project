@@ -30,7 +30,8 @@ public class DetailsActivity extends AppCompatActivity {
 
         headLines = (NewsHeadLines) getIntent().getSerializableExtra("data");
 
-        //retrieving the content from the News Api methods
+        //retrieving the content from the News Api methods to feed into the particular news category card
+
 
         txt_Title.setText(headLines.getTitle());
         txt_Author.setText(headLines.getAuthor());

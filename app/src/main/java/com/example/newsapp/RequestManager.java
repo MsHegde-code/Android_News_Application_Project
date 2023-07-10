@@ -16,6 +16,7 @@ import retrofit2.http.Query;
 
 public class RequestManager {
 
+
     Context context;
     Retrofit retrofit = new Retrofit.Builder()
             .baseUrl("https://newsapi.org/v2/")
@@ -48,7 +49,7 @@ public class RequestManager {
         }
     }
 
-
+    //request manager is used to fetch the requested news from the api by default or search bar or category section
     public RequestManager(Context context) {
         this.context = context;
     }
