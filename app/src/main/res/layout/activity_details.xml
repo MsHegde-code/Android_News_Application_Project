@@ -20,6 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:background="#69F0AE"
                 app:cardElevation="8dp">
 
                 <LinearLayout
@@ -32,8 +33,9 @@
                         android:id="@+id/text_detail_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
                         android:textColor="@color/black"
-                        android:textSize="26sp"
+                        android:textSize="24sp"
                         android:textStyle="bold">
 
                     </TextView>
@@ -54,7 +56,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
-                        android:textColor="@color/purple_500"
+                        android:textColor="@color/black"
                         android:textSize="16sp">
 
                     </TextView>
@@ -68,6 +70,7 @@
                         android:textSize="16sp">
 
                     </TextView>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -77,10 +80,16 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_marginTop="8dp"
-                android:textColor="@color/black"
+                android:textColor="#A86801"
                 android:textSize="22sp">
 
             </TextView>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
 
             <TextView
                 android:id="@+id/text_detail_content"
@@ -88,6 +97,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="5dp"
                 android:textColor="@color/black"
                 android:textSize="20sp">
 
@@ -97,10 +108,12 @@
                 android:id="@+id/tts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/baseline_record_voice_over_24"
 
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button_design"
                 android:text="@string/speak"
-                android:textColor="#00FFFFFF" />
+                app:icon="@drawable/baseline_record_voice_over_24" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
