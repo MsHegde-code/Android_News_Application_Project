@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AAAAAA"
     android:orientation="vertical"
+    android:theme="@style/SCREEN"
     android:padding="5dp"
     tools:context=".HomeScreen">
 
@@ -43,7 +43,9 @@
                 android:layout_margin="6dp"
                 android:background="@drawable/custom_button_design"
                 android:padding="6dp"
+                android:theme="@style/TEXT"
                 android:text="@string/general"
+
                 android:textSize="12sp">
 
             </Button>
@@ -55,6 +57,7 @@
                 android:layout_margin="6dp"
                 android:background="@drawable/custom_button_design"
                 android:padding="6dp"
+                android:theme="@style/TEXT"
                 android:text="@string/business"
                 android:textSize="12sp">
 
@@ -66,6 +69,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:background="@drawable/custom_button_design"
+
+                android:theme="@style/TEXT"
                 android:padding="6dp"
                 android:text="@string/entertainment"
                 android:textSize="12sp">
@@ -78,6 +83,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:background="@drawable/custom_button_design"
+
+                android:theme="@style/TEXT"
                 android:padding="6dp"
                 android:text="@string/health"
                 android:textSize="12sp">
@@ -90,6 +97,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:background="@drawable/custom_button_design"
+
+                android:theme="@style/TEXT"
                 android:padding="6dp"
                 android:text="@string/science"
                 android:textSize="12sp">
@@ -102,6 +111,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:background="@drawable/custom_button_design"
+
+                android:theme="@style/TEXT"
                 android:padding="6dp"
                 android:text="@string/sports"
                 android:textSize="12sp">
@@ -114,6 +125,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:background="@drawable/custom_button_design"
+
+                android:theme="@style/TEXT"
                 android:padding="6dp"
                 android:text="@string/technology"
                 android:textSize="12sp">
@@ -132,10 +145,11 @@
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_margin="8dp"
-        android:padding="5dp"
-        android:text="Theme" />
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:padding="4dp"
+        android:text="Theme"
+        android:theme="@style/TEXT" />
 
 </LinearLayout>

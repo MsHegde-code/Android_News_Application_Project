@@ -13,4 +13,18 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+    <style name="SCREEN">
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BUTTON">
+        <item name="background">?android:attr/colorActivatedHighlight</item>
+        <item name="android:textColor">@color/material_dynamic_neutral_variant90</item>
+    </style>
 </resources>
